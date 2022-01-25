@@ -113,35 +113,3 @@ todoListWed.addEventListener('click', taskAction);
 todoListThurs.addEventListener('click', taskAction);
 todoListFri.addEventListener('click', taskAction);
 todoListWeekend.addEventListener('click', taskAction);
-
-// taskInputMon.addEventListener('keyup', (e) => {
-//   if (e.code === 'Enter') {
-//     console.log(e);
-//     //addTask(e.path[0].classList[1]);
-//   }
-// });
-// taskInputTues.addEventListener('keyup', (e) => {
-//   if (e.code === 'Enter') {
-//     addTask;
-//   }
-// });
-// taskInputWed.addEventListener('keyup', (e) => {
-//   if (e.code === 'Enter') {
-//     addTask;
-//   }
-// });
-// taskInputThurs.addEventListener('keyup', (e) => {
-//   if (e.code === 'Enter') {
-//     addTask;
-//   }
-// });
-// taskInputFri.addEventListener('keyup', (e) => {
-//   if (e.code === 'Enter') {
-//     addTask;
-//   }
-// });
-// taskInputWeekend.addEventListener('keyup', (e) => {
-//   if (e.code === 'Enter') {
-//     addTask;
-//   }
-// });
