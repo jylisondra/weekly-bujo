@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Bujo</title>
+</head>
+
+<body>
+    <nav>
+        <span>BUJO</span>
+        <ul>
+            <li>Home</li>
+            <li>Logs</li>
+
+        </ul>
+    </nav>
+    <div class="bujo-container">
+        <div class="week-container">
+            <div class="daily-container">
+                <h1 class="date">Monday</h1>
+                <div class="tasks">
+                    <ul class="task-list mon-list"></ul>
+                </div>
+                <div class="tasker">
+                    <input type="text" class="task-input mon-input">
+                    <button class="btn-add" id="btn-mon" type="submit">btn</button>
+                </div>
+            </div>
+            <div class="daily-container">
+                <h1>Tuesday</h1>
+                <div class="tasks">
+                    <ul class="task-list tues-list"></ul>
+                </div>
+                <div class="tasker">
+                    <input type="text" class="task-input tues-input">
+                    <button class="btn-add" id="btn-tues" type="submit">btn</button>
+                </div>
+            </div>
+            <div class="daily-container">
+                <h1 class="date">Wednesday</h1>
+                <div class="tasks">
+                    <ul class="task-list wed-list"></ul>
+                </div>
+                <div class="tasker">
+                    <input type="text" class="task-input wed-input">
+                    <button class="btn-add" id="btn-wed" type="submit">btn</button>
+                </div>
+            </div>
+            <div class="daily-container">
+                <h1 class="date">Thursday</h1>
+                <div class="tasks">
+                    <ul class="task-list thurs-list"></ul>
+                </div>
+                <div class="tasker">
+                    <input type="text" class="task-input thurs-input">
+                    <button class="btn-add" id="btn-thurs" type="submit">btn</button>
+                </div>
+            </div>
+            <div class="daily-container">
+                <h1 class="date">Friday</h1>
+                <div class="tasks">
+                    <ul class="task-list fri-list"></ul>
+                </div>
+                <div class="tasker">
+                    <input type="text" class="task-input fri-input">
+                    <button class="btn-add" id="btn-fri" type="submit">btn</button>
+                </div>
+            </div>
+            <div class="daily-container">
+                <h1 class="date">Weekend</h1>
+                <div class="tasks">
+                    <ul class="task-list weekend-list"></ul>
+                </div>
+                <div class="tasker">
+                    <input type="text" class="task-input weekend-input"">
+                    <button class=" btn-add" id="btn-weekend" type="submit">btn</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="extras-container">
+                <h1>Notes</h1>
+                <div class="tasker">
+                    <input type="text" class="task-input notes-input">
+                    <button class="btn-add" id="btn-notes">btn</button>
+                </div>
+
+            </div>
+            <div class="extras-container">
+                <h1>Habit Tracker</h1>
+                <div class="tasker">
+                    <input type="text" class="task-input habit-input">
+                    <button class="btn-add" id="btn-habit">btn</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
