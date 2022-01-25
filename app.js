@@ -99,7 +99,7 @@ const taskAction = (e) => {
   }
 };
 
-// Event listeners
+// Event listeners //
 btnMon.addEventListener('click', addTask);
 btntues.addEventListener('click', addTask);
 btnwed.addEventListener('click', addTask);
