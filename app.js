@@ -5,8 +5,8 @@ const btnwed = document.getElementById('btn-wed');
 const btnthurs = document.getElementById('btn-thurs');
 const btnfri = document.getElementById('btn-fri');
 const btnweekend = document.getElementById('btn-weekend');
-const btnnotes = document.getElementById('btn-notes');
-const btnhabit = document.getElementById('btn-habit');
+const btnNotes = document.getElementById('btn-notes');
+const btngoals = document.getElementById('btn-goals');
 
 const taskInputMon = document.querySelector('.mon-input');
 const taskInputTues = document.querySelector('.tues-input');
@@ -14,6 +14,8 @@ const taskInputWed = document.querySelector('.wed-input');
 const taskInputThurs = document.querySelector('.thurs-input');
 const taskInputFri = document.querySelector('.fri-input');
 const taskInputWeekend = document.querySelector('.weekend-input');
+const taskInputGoals = document.querySelector('.goals-input');
+const taskInputNotes = document.querySelector('.notes-input');
 
 const todoListMon = document.querySelector('.mon-list');
 const todoListTues = document.querySelector('.tues-list');
@@ -21,6 +23,8 @@ const todoListWed = document.querySelector('.wed-list');
 const todoListThurs = document.querySelector('.thurs-list');
 const todoListFri = document.querySelector('.fri-list');
 const todoListWeekend = document.querySelector('.weekend-list');
+const goalsList = document.querySelector('.goals-list');
+const notesList = document.querySelector('.notes-list');
 
 // Functions
 const addTask = (e) => {
@@ -51,6 +55,10 @@ const addTask = (e) => {
     newTodo.innerText = taskInputFri.value;
   } else if (e.target.id === 'btn-weekend') {
     newTodo.innerText = taskInputWeekend.value;
+  } else if (e.target.id === 'btn-goals') {
+    newTodo.innerText = taskInputGoals.value;
+  } else if (e.target.id === 'btn-notes') {
+    newTodo.innerText = taskInputNotes.value;
   }
 
   newTodo.classList.add('todo-item');
@@ -82,6 +90,12 @@ const addTask = (e) => {
   } else if (e.target.id === 'btn-weekend') {
     todoListWeekend.appendChild(todoDiv);
     taskInputWeekend.value = '';
+  } else if (e.target.id === 'btn-goals') {
+    goalsList.appendChild(todoDiv);
+    taskInputGoals.value = '';
+  } else if (e.target.id === 'btn-notes') {
+    notesList.appendChild(todoDiv);
+    taskInputNotes.value = '';
   }
 };
 
@@ -106,6 +120,8 @@ btnwed.addEventListener('click', addTask);
 btnthurs.addEventListener('click', addTask);
 btnfri.addEventListener('click', addTask);
 btnweekend.addEventListener('click', addTask);
+btngoals.addEventListener('click', addTask);
+btnNotes.addEventListener('click', addTask);
 
 todoListMon.addEventListener('click', taskAction);
 todoListTues.addEventListener('click', taskAction);
@@ -113,3 +129,5 @@ todoListWed.addEventListener('click', taskAction);
 todoListThurs.addEventListener('click', taskAction);
 todoListFri.addEventListener('click', taskAction);
 todoListWeekend.addEventListener('click', taskAction);
+goalsList.addEventListener('click', taskAction);
+notesList.addEventListener('click', taskAction);
