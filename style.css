@@ -52,18 +52,25 @@ body {
 
 .task {
   display: flex;
+  margin-top: 0.3rem;
   justify-content: space-between;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  text-align: left;
+  border-bottom: 2px solid brown;
+}
+
+.complete-btn {
+  margin-left: 0.3rem;
+}
+.delete-btn {
+  margin-left: auto;
+  margin-right: 0.3rem;
 }
 
 .completed {
   text-decoration: line-through;
 }
 
-.task .todo-item {
-  margin: 0.3rem;
+.todo-item {
+  margin-left: 0.3rem;
 }
 .tasks ul {
   padding: 0;
@@ -73,11 +80,16 @@ body {
 .tasker {
   position: absolute;
   bottom: 0px;
+  width: 100%;
   display: flex;
 }
 
 .tasker .task-input {
-  width: 100%;
+  flex: 2;
+}
+
+.btn-add {
+  cursor: pointer;
 }
 .todo .complete-btn {
   border: none;
@@ -100,9 +112,6 @@ body {
 }
 
 /* Buttons */
-.btn-add {
-  cursor: pointer;
-}
 
 .complete-btn,
 .delete-btn {
