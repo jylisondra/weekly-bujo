@@ -83,8 +83,12 @@ nav ul li {
   justify-content: space-between;
   padding: 0.5rem;
   border-bottom: 1px solid rgba(202, 190, 190, 0.644);
-  max-width: 100%;
   text-align: left;
+}
+
+.todo-item {
+  width: 75%;
+  word-wrap: break-word;
 }
 
 .task i {
