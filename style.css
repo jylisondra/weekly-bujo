@@ -15,7 +15,7 @@ body {
 /* Navbar */
 nav {
   display: flex;
-  background: rgb(214, 240, 214);
+  background: rgb(209, 228, 209);
   height: 3em;
 }
 
@@ -64,17 +64,29 @@ nav ul li {
   margin: 0.5rem;
   width: 18em;
   position: relative;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 /* Tasks */
 .tasks {
-  height: 25em;
+  height: 28em;
+  border-top: 3.5px solid rgba(224, 221, 221, 0.671);
+}
+
+.tasks ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.daily-container .task-list {
+  height: calc(28em - 35px);
 }
 
 .task-list {
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 .task {
@@ -94,9 +106,6 @@ nav ul li {
 .task i {
   color: rgba(12, 12, 12, 0.301);
 }
-.task:first-child {
-  border-top: 1px solid rgba(202, 190, 190, 0.644);
-}
 
 .complete-btn {
   margin-left: 0.3rem;
@@ -113,10 +122,6 @@ nav ul li {
 .todo-item {
   margin-left: 0.3rem;
 }
-.tasks ul {
-  padding: 0;
-  list-style: none;
-}
 
 /* Task input container */
 .tasker {
@@ -124,13 +129,13 @@ nav ul li {
   bottom: 0px;
   width: 100%;
   display: flex;
-  height: 30px;
+  height: 35px;
 }
 
 .task-input {
   flex: 1;
   border: none;
-  background-color: rgba(187, 179, 179, 0.39);
+  background-color: rgba(207, 201, 201, 0.37);
   font: inherit;
   padding: 0.6rem;
 }
@@ -149,7 +154,7 @@ nav ul li {
 
 .btn-add {
   cursor: pointer;
-  background: rgba(138, 151, 138, 0.87);
+  background: rgba(100, 109, 98, 0.993);
   border: none;
   border-bottom-right-radius: 0.5em;
   width: 45px;
@@ -159,6 +164,10 @@ nav ul li {
 .btn-add:hover {
   background: rgba(110, 119, 110, 0.87);
   transition: 150ms ease-in-out;
+}
+
+.btn-add i {
+  color: white;
 }
 
 .todo .complete-btn {
@@ -172,10 +181,15 @@ nav ul li {
   display: flex;
 }
 
+.extras-container .task-list {
+  height: calc(13em - 28px);
+}
+
 .extras-container {
   border-radius: 0.5em;
   margin: 0.5rem;
-  width: 50%;
+  flex: 1;
+  height: 18em;
   padding-bottom: 10rem;
   position: relative;
   background-color: #fff;
@@ -199,7 +213,7 @@ nav ul li {
   border: 2px solid white;
   border-radius: 0.5em;
   padding: 0.4em 0.8em;
-  margin-top: 1em;
+  margin-top: 2.5em;
   transition: 200ms ease-in-out;
 }
 
