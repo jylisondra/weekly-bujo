@@ -47,38 +47,6 @@ nav ul li {
   text-align: center;
 }
 
-@media (min-width: 30em) {
-  .grid-col-span-3 {
-    grid-column: 1;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
-  }
-}
-
-@media (min-width: 45em) {
-  .grid-col-span-3 {
-    grid-column: span 3;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-  }
-}
-@media (min-width: 80em) {
-  .grid-col-span-3 {
-    grid-column: span 3;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1em;
-  }
-}
-
 .bujo-container h1 {
   margin-top: 1.5rem;
   text-align: center;
@@ -153,21 +121,37 @@ nav ul li {
   margin-left: 0.3rem;
 }
 
+/* Footer Container */
+.extras-container .task-list {
+  height: calc(13em - 28px);
+}
+
+.extras-container {
+  border-radius: 0.5em;
+  height: 18em;
+  padding-bottom: 10rem;
+  position: relative;
+  background-color: #fff;
+}
+
 /* Task input container */
 .tasker {
-  position: absolute;
   bottom: 0px;
   width: 100%;
+  max-width: 100%;
   display: flex;
   height: 35px;
 }
 
+.extras-container .tasker {
+  position: absolute;
+}
+
 .task-input {
-  flex: 1;
+  flex: 10;
   border: none;
   background-color: rgba(207, 201, 201, 0.37);
   font: inherit;
-  padding: 0.6rem;
 }
 
 .task-input:focus {
@@ -187,7 +171,7 @@ nav ul li {
   background: rgba(100, 109, 98, 0.993);
   border: none;
   border-bottom-right-radius: 0.5em;
-  width: 45px;
+  flex: 1;
   transition: 150ms ease-in-out;
 }
 
@@ -204,23 +188,6 @@ nav ul li {
   border: none;
   background: none;
   margin-left: auto 0;
-}
-
-/* Footer Container */
-.footer-container {
-  display: flex;
-}
-
-.extras-container .task-list {
-  height: calc(13em - 28px);
-}
-
-.extras-container {
-  border-radius: 0.5em;
-  height: 18em;
-  padding-bottom: 10rem;
-  position: relative;
-  background-color: #fff;
 }
 
 /* Buttons */
@@ -252,4 +219,36 @@ nav ul li {
   border: 2px solid rgb(216, 62, 62);
   transition: 200ms ease-in-out;
   cursor: pointer;
+}
+
+@media (min-width: 30em) {
+  .grid-col-span-3 {
+    grid-column: 1;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+}
+
+@media (min-width: 50em) {
+  .grid-col-span-3 {
+    grid-column: span 3;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+}
+@media (min-width: 90em) {
+  .grid-col-span-3 {
+    grid-column: span 3;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1em;
+  }
 }
