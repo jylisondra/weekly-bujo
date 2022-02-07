@@ -18,93 +18,89 @@
         <ul>
         </ul>
     </nav>
-    <div class="bujo-container">
-        <div class="week-container">
-            <div class="daily-container">
-                <h1 class="date">Monday</h1>
-                <div class="tasks">
-                    <ul class="task-list mon-list"></ul>
-                </div>
-                <div class="tasker">
-                    <input type="text" class="task-input mon-input" placeholder="Add task">
-                    <button class="btn-add" id="btn-mon" type="submit"><i class="fas fa-plus"></i></button>
-                </div>
+    <div class="bujo-container grid-container">
+        <div class="daily-container">
+            <h1 class="date">Monday</h1>
+            <div class="tasks">
+                <ul class="task-list mon-list"></ul>
             </div>
-            <div class="daily-container">
-                <h1>Tuesday</h1>
-                <div class="tasks">
-                    <ul class="task-list tues-list"></ul>
-                </div>
-                <div class="tasker">
-                    <input type="text" class="task-input tues-input">
-                    <button class="btn-add" id="btn-tues" type="submit"><i class="fas fa-plus"></i></button>
-                </div>
+            <div class="tasker">
+                <input type="text" class="task-input mon-input" placeholder="Add task">
+                <button class="btn-add" id="btn-mon" type="submit"><i class="fas fa-plus"></i></button>
             </div>
-            <div class="daily-container">
-                <h1 class="date">Wednesday</h1>
-                <div class="tasks">
-                    <ul class="task-list wed-list"></ul>
-                </div>
-                <div class="tasker">
-                    <input type="text" class="task-input wed-input">
-                    <button class="btn-add" id="btn-wed" type="submit"><i class="fas fa-plus"></i></button>
-                </div>
+        </div>
+        <div class="daily-container">
+            <h1>Tuesday</h1>
+            <div class="tasks">
+                <ul class="task-list tues-list"></ul>
             </div>
-            <div class="daily-container">
-                <h1 class="date">Thursday</h1>
-                <div class="tasks">
-                    <ul class="task-list thurs-list"></ul>
-                </div>
-                <div class="tasker">
-                    <input type="text" class="task-input thurs-input">
-                    <button class="btn-add" id="btn-thurs" type="submit"><i class="fas fa-plus"></i></button>
-                </div>
+            <div class="tasker">
+                <input type="text" class="task-input tues-input">
+                <button class="btn-add" id="btn-tues" type="submit"><i class="fas fa-plus"></i></button>
             </div>
-            <div class="daily-container">
-                <h1 class="date">Friday</h1>
-                <div class="tasks">
-                    <ul class="task-list fri-list"></ul>
-                </div>
-                <div class="tasker">
-                    <input type="text" class="task-input fri-input">
-                    <button class="btn-add" id="btn-fri" type="submit"><i class="fas fa-plus"></i></button>
-                </div>
+        </div>
+        <div class="daily-container">
+            <h1 class="date">Wednesday</h1>
+            <div class="tasks">
+                <ul class="task-list wed-list"></ul>
             </div>
-            <div class="daily-container">
-                <h1 class="date">Weekend</h1>
-                <div class="tasks">
-                    <ul class="task-list weekend-list"></ul>
-                </div>
-                <div class="tasker">
-                    <input type="text" class="task-input weekend-input"">
+            <div class="tasker">
+                <input type="text" class="task-input wed-input">
+                <button class="btn-add" id="btn-wed" type="submit"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+        <div class="daily-container">
+            <h1 class="date">Thursday</h1>
+            <div class="tasks">
+                <ul class="task-list thurs-list"></ul>
+            </div>
+            <div class="tasker">
+                <input type="text" class="task-input thurs-input">
+                <button class="btn-add" id="btn-thurs" type="submit"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+        <div class="daily-container">
+            <h1 class="date">Friday</h1>
+            <div class="tasks">
+                <ul class="task-list fri-list"></ul>
+            </div>
+            <div class="tasker">
+                <input type="text" class="task-input fri-input">
+                <button class="btn-add" id="btn-fri" type="submit"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+        <div class="daily-container">
+            <h1 class="date">Weekend</h1>
+            <div class="tasks">
+                <ul class="task-list weekend-list"></ul>
+            </div>
+            <div class="tasker">
+                <input type="text" class="task-input weekend-input"">
                     <button class=" btn-add" id="btn-weekend" type="submit"><i class="fas fa-plus"></i></button>
-                </div>
             </div>
         </div>
-        <div class="footer-container">
-            <div class="extras-container">
-                <h1>Weekly Goals</h1>
-                <div class="tasks">
-                    <ul class="task-list goals-list"></ul>
-                </div>
-                <div class="tasker">
-                    <input type="text" class="task-input goals-input" placeholder="Add goal">
-                    <button class="btn-add" id="btn-goals"><i class="fas fa-plus"></i></button>
-                </div>
+        <div class="extras-container grid-col-span-3">
+            <h1>Weekly Goals</h1>
+            <div class="tasks">
+                <ul class="task-list goals-list"></ul>
             </div>
-            <div class="extras-container">
-                <h1>Notes</h1>
-                <div class="tasks">
-                    <ul class="task-list notes-list"></ul>
-                </div>
-                <div class="tasker">
-                    <input type="text" class="task-input notes-input" placeholder="Add note">
-                    <button class="btn-add" id="btn-notes"><i class="fas fa-plus"></i></button>
-                </div>
+            <div class="tasker">
+                <input type="text" class="task-input goals-input" placeholder="Add goal">
+                <button class="btn-add" id="btn-goals"><i class="fas fa-plus"></i></button>
             </div>
         </div>
-        <button class="btn-clear">Clear</button>
+        <div class="extras-container grid-col-span-3">
+            <h1>Notes</h1>
+            <div class="tasks">
+                <ul class="task-list notes-list"></ul>
+            </div>
+            <div class="tasker">
+                <input type="text" class="task-input notes-input" placeholder="Add note">
+                <button class="btn-add" id="btn-notes"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
     </div>
+    <button class="btn-clear">Clear</button>
     <script src="app.js"></script>
 </body>
 

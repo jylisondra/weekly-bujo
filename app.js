@@ -44,6 +44,7 @@ const addTask = (e) => {
   // Create task Li
   const newTodo = document.createElement('li');
   if (e.target.id === 'btn-mon') {
+    console.log(taskInputMon.value);
     newTodo.innerText = taskInputMon.value;
   } else if (e.target.id === 'btn-tues') {
     newTodo.innerText = taskInputTues.value;
