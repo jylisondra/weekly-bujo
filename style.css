@@ -56,7 +56,13 @@ nav ul li {
 }
 
 /* Weekly container */
-.week-container {
+.grid-col-span-3 {
+  grid-column: 1;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em;
 }
 
 .daily-container {
@@ -67,7 +73,7 @@ nav ul li {
 
 /* Tasks */
 .tasks {
-  height: 28em;
+  height: 20em;
   border-top: 3.5px solid rgba(224, 221, 221, 0.671);
 }
 
@@ -221,17 +227,6 @@ nav ul li {
   cursor: pointer;
 }
 
-@media (min-width: 30em) {
-  .grid-col-span-3 {
-    grid-column: 1;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
-  }
-}
-
 @media (min-width: 50em) {
   .grid-col-span-3 {
     grid-column: span 3;
@@ -240,6 +235,9 @@ nav ul li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
+  }
+  .daily-container .task-list {
+    height: calc(28em - 35px);
   }
 }
 @media (min-width: 90em) {
